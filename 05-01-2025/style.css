@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: rgb(18, 14, 14);
+    --middle-color: rgb(230, 40, 40);
+    --last-color: yellow;
+    --container-padding: 10px 20px;
+}
+
+/* .container {
+    height: 400px;
+    background-image: linear-gradient(to left top, var(--primary-color), var(--secondary-color));
+} */
+
+/* .container {
+    height: 400px;
+    background-image: radial-gradient(circle, var(--middle-color), var(--primary-color), var(--last-color));
+} */
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /* grid-template-columns: repeat(5, 300px); */
+    row-gap: 30px;
+    padding: 20px 40px;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    /* background-color: var(--primary-color); */
+    box-shadow: 5px 2px 6px rgb(112, 199, 227);
+    transition: linear;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.container img {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .container:hover {
+    transform: scale(2);
+} */
+
+/* .container:hover {
+    transform: rotateY(150deg);
+    width: 600px;
+} */
+
+/* .btn {
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all 0.9s 1s ease;
+} */
+
+/* .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+} */

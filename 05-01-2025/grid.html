@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .item2 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .item3 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .item4 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .item5 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .item6 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-auto-rows: 150px;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The grid-auto-rows Property</h1>
+
+    <p>Use the <em>grid-auto-rows</em> property to set a default size (height) for all rows.</p>
+    <p>Set the size to 150 pixels per row:</p>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </div>
+
+    <p><strong>Note:</strong> The grid-template-rows property overrides this property.</p>
+
+</body>
+
+</html>
