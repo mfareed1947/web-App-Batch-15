@@ -1,0 +1,50 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorChange;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes colorChange {
+    /* from {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+    }
+
+    to {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+    } */
+
+    0% {
+        top: 0%;
+    }
+
+    25% {
+        right: 10%;
+    }
+
+    50% {
+        bottom: 10%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.accordion-item {
+    width: 100px;
+    background-color: chartreuse !important;
+}
