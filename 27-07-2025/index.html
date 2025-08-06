@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign Up Form</h1>
+        <button id="google-btn">Login with Google</button>
+        <form>
+            <input type="email" name="email" id="email" placeholder="enter your email">
+            <br>
+            <input type="password" name="password" id="password" placeholder="enter your password">
+            <br>
+            <input id="btn" type="button" value="sign Up">
+            <p>account already exist? <a href="./login.html">Login</a></p>
+        </form>
+    </div>
+
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./signUp.js"></script>
+</body>
+
+</html>
