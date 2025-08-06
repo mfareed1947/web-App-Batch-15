@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat App - User List</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .chat-container {
+            width: 400px;
+            max-width: 100%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 50px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-header {
+            background-color: #0084ff;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        .chat-search {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .chat-search input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .user-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .user:hover {
+            background-color: #f9f9f9;
+        }
+
+        .user img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 12px;
+        }
+
+        .user-info {
+            flex-grow: 1;
+        }
+
+        .user-info h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .user-info p {
+            margin: 4px 0 0;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .time {
+            font-size: 12px;
+            color: #888;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chats</h2>
+        </div>
+
+        <div class="chat-search">
+            <input type="text" id="searchInput" placeholder="Search users..." onkeyup="searchUsers()">
+        </div>
+
+        <div class="user-list" id="userList">
+            <!-- User items will be dynamically generated here -->
+        </div>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>
