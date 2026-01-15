@@ -14,8 +14,6 @@ const bodyParser = (req, res, next) => {
 app.use(bodyParser)
 
 
-
-
 app.post("/user",  (req, res) => {
   console.log(req.body);
   res.status(200).send(req.body.firstName);
